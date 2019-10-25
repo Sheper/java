@@ -25,7 +25,8 @@
             data source, this example data source is just for development and testing! -->
         <!-- The datasource is deployed as WEB-INF/greeter-quickstart-ds.xml,
             you can find it in the source at src/main/webapp/WEB-INF/greeter-quickstart-ds.xml -->
-        <jta-data-source>jdbc/prime</jta-data-source>
+        <!-- <jta-data-source>jdbc/prime</jta-data-source> -->
+        <jta-data-source>datasources/prime</jta-data-source>        
         <properties>
         	<property value="create" name="javax.persistence.schema-generation.database.action"/>
         </properties>

@@ -63,7 +63,7 @@ public class User{
     public Connection getConnection(){
         try{
             Class.forName("com.mysql.jdbc.Driver");   
-            connection = DriverManager.getConnection( "jdbc:mysql://localhost:3306/mysql_db?useSSL=false","root","root");
+            connection = DriverManager.getConnection( "jdbc:mysql://localhost:3306/mysql_db?useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","root","root");            
         }catch(Exception e){
             System.out.println(e);
         }
